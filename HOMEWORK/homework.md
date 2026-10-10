@@ -41,7 +41,7 @@ equivalent of ```NOP```
 
 |Hex|Command|Action|
 |---|---|---|
-|0x5c|\\|Swap top two|
+|0x5c| \ |Swap top two|
 |0x3a|:|Duplicate top|
 |0x30|0|push(0) (Not allowed if stack has >= 100 things)|
 |0x40|@|Exit|
