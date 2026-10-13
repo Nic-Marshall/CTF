@@ -19,6 +19,11 @@
 - Built a return-oriented programming (ROP) chain to achieve arbitrary code execution
 - Optimized payload size while maintaining exploit reliability
 
+## ARM_KGME1
+- Reverse engineered a custom VM in an ARM binary
+- Identified and extracted a TEA block cypher
+- Created a Python script to generate valid keys
+
 
 ## Tools & Technologies
 
@@ -26,3 +31,4 @@
 - GDB / pwndbg
 - Python / pwntools
 - x86 / x86-64 Assembly
+- ARM Assembly
