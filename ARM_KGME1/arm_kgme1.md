@@ -2,7 +2,7 @@
 
 ## Overview
 
-arm_kgme1 is a reverse engineering challenge from crackmes.one [arm_kgm1](https://crackmes.one/crackme/5ab77f5d33c5d40ad448c69c) by esteve. It is a 32-bit ARM ELF that implements a small
+arm_kgme1 is a reverse engineering challenge from crackmes.one [arm_kgme1](https://crackmes.one/crackme/5ab77f5d33c5d40ad448c69c) by esteve. It is a 32-bit ARM ELF that implements a small
 register-based virtual machine. The VM program is stored in the binary as fake ARM instructions placed right after `main()`, and
 it is read through `$lr` from the call to `interpret_vm()` from main.
 
@@ -204,7 +204,7 @@ for (i = 0; i < 32; i++) {
 with `v0 = 0xba01aafe` and `v1 = 0xbbff31a3` going in, and `reg2` to `reg5` as `k0` to `k3`. The result is the `reg0` and `reg1` to
 enter. For example, key words `0x11111111, 0x22222222, 0x33333333, 0x44444444` give `reg0 = 0x2213aa7e` and `reg1 = 0x231c4313`.
 
-The script prints a ready-to-copy line of the six values. "11111111 22222222 33333333 44444444 55555555 66666666"
+The script prints a ready-to-copy line of the six values. "11111111,22222222,33333333,44444444,55555555,66666666"
 
 ### Verification
 
