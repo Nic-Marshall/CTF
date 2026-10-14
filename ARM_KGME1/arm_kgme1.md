@@ -204,14 +204,14 @@ for (i = 0; i < 32; i++) {
 with `v0 = 0xba01aafe` and `v1 = 0xbbff31a3` going in, and `reg2` to `reg5` as `k0` to `k3`. The result is the `reg0` and `reg1` to
 enter. For example, key words `0x11111111, 0x22222222, 0x33333333, 0x44444444` give `reg0 = 0x2213aa7e` and `reg1 = 0x231c4313`.
 
-The script prints a ready-to-copy line of the six values. [Add the input format the binary expects.]
+The script prints a ready-to-copy line of the six values. "11111111 22222222 33333333 44444444 55555555 66666666"
 
 ### Verification
 
 32-bit wraparound is the main source of mistakes in a Python version, so the script uses NumPy `uint32`, and `twoc()` prints each
 register as an unsigned 32-bit hex value so it can be compared directly with the QEMU and gdb output. The keygen's output was also
 checked against a separate plain-Python TEA implementation, and the forward model (`run_vm`) recovers the target block for the
-generated keys. [Confirm that a generated key is accepted by the real binary under qemu-arm.]
+generated keys.
 
 ## Result
 
